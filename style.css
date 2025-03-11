@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #3E8DA8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.navbar .logo a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .navbar .nav-links {
+    line-height: 70px;
+    height: 100%;
+}
+
+nav .navbar .links {
+    display: flex;
+}
+
+nav .navbar .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .links li a {
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow {
+    transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow {
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav .navbar .links li .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: #3E8DA8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+}
+
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu {
+    display: block;
+}
+
+.navbar .links li .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .links li .sub-menu a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar .links li .sub-menu .more-arrow {
+    line-height: 40px;
+}
+
+.navbar .links li .htmlCss-more-sub-menu {
+}
+
+.navbar .links li .sub-menu .more-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
+}
+
+.links li .sub-menu .more:hover .more-sub-menu {
+    display: block;
+}
+
+.navbar .search-box {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar .search-box i {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar .search-box .input-box {
+    position: absolute;
+    right: calc(100% - 40px);
+    top: 80px;
+    height: 60px;
+    width: 300px;
+    background: #3E8DA8;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.navbar.showInput .search-box .input-box {
+    top: 65px;
+    opacity: 1;
+    pointer-events: auto;
+    background: #3E8DA8;
+}
+
+.search-box .input-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #3E8DA8;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+}
+
+.search-box .input-box input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 280px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+  background: #fff;
+  color: #333;
+}
+
+.navbar .nav-links .sidebar-logo {
+  display: none;
+}
+
+.navbar .bx-menu {
+  display: none;
+}
+
+.container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-content .logo img {
+  width: 150px;
+  height: auto;
+}
+
+.header-content .title h1 {
+  font-size: 2.5rem;
+  color: #3E8DA8;
+  margin-bottom: 10px;
+}
+
+.header-content .title h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.content {
+  text-align: center;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  color: #3E8DA8;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.years h3 {
+  font-size: 1.5rem;
+  color: #3E8DA8;
+  margin-bottom: 10px;
+}
+
+.year-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.year-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3E8DA8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.year-buttons button:hover {
+  background-color: #2c6a7e;
+}
+
+.about-us {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  color: #3E8DA8;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 0 20px;
+  }
+
+  .navbar .bx-menu {
+      display: block;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  .navbar .nav-links {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      width: 100%;
+      max-width: 280px;
+      background: #3E8DA8;
+      padding-top: 60px;
+      transition: all 0.4s ease;
+  }
+
+  .navbar .nav-links.active {
+      left: 0;
+  }
+
+  .navbar .nav-links .sidebar-logo {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .navbar .nav-links .sidebar-logo .logo-name {
+      font-size: 24px;
+      color: #fff;
+  }
+
+  .navbar .nav-links .links {
+      display: block;
+  }
+
+  .navbar .nav-links .links li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .navbar .nav-links .links li a {
+      display: block;
+      padding: 10px 20px;
+  }
+
+  .navbar .nav-links .links li .sub-menu {
+      position: static;
+      display: none;
+      background: #2c6a7e;
+      border-radius: 0;
+  }
+
+  .navbar .nav-links .links li:hover .sub-menu {
+      display: none;
+  }
+
+  .navbar .nav-links .links li .sub-menu li {
+      padding: 0 20px;
+  }
+
+  .navbar .nav-links .links li .sub-menu li a {
+      padding: 10px 20px;
+  }
+
+  .navbar .nav-links .links li .arrow {
+      display: none;
+  }
+
+  .navbar .search-box {
+      display: none;
+  }
+
+  .container {
+      margin-top: 60px;
+  }
+
+  .header-content .title h1 {
+      font-size: 2rem;
+  }
+
+  .header-content .title h2 {
+      font-size: 1.2rem;
+  }
+
+  .welcome h2 {
+      font-size: 1.5rem;
+  }
+
+  .welcome p {
+      font-size: 1rem;
+  }
+
+  .years h3 {
+      font-size: 1.2rem;
+  }
+
+  .year-buttons button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+
+  .about-us h2 {
+      font-size: 1.5rem;
+  }
+
+  .about-us p {
+      font-size: 1rem;
+  }
+
+  .header-content .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+}
+body {
+  background: linear-gradient(135deg, #3E8DA8, #1a4a5a);
+  min-height: 100vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img.logo {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+}

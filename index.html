@@ -1,0 +1,152 @@
+index.html 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Project PUSLITBANG</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+    <style> 
+        body { 
+            background-image: url('background_main.png'); 
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        } 
+        .navbar { 
+            background: #3E8DA8; 
+            padding: 10px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        } 
+        .navbar .logo { 
+            display: flex; 
+            align-items: center; 
+        } 
+        .navbar .logo a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 24px; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center; 
+        } 
+        .navbar .logo img { 
+            width: 40px; 
+            height: auto; 
+            margin-right: 10px; 
+        } 
+        .navbar .nav-links { 
+            display: flex; 
+            align-items: center; 
+        } 
+        .navbar .nav-links ul { 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+        } 
+        .navbar .nav-links ul li { 
+            margin-left: 20px; 
+        } 
+        .navbar .nav-links ul li a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 16px; 
+        } 
+        .container { 
+            text-align: center; 
+            padding: 20px; 
+        } 
+        .header-content .logo img { 
+            width: 100px; 
+            height: auto; 
+        } 
+        .title h1 { 
+            font-size: 2.5rem; 
+            color: #3E8DA8; 
+        } 
+        .title h2 { 
+            font-size: 1.5rem; 
+            color: #333; 
+        } 
+        .welcome h2 { 
+            font-size: 2rem; 
+            color: #3E8DA8; 
+        } 
+        .welcome p { 
+            font-size: 1.2rem; 
+            color: #333; 
+        } 
+        .year-buttons button { 
+            padding: 10px 20px; 
+            font-size: 1rem; 
+            color: #fff; 
+            background-color: #3E8DA8; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin: 5px; 
+        } 
+        .year-buttons button:hover { 
+            background-color: #2c6a7e; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <nav> 
+        <div class="navbar"> 
+            <i class='bx bx-menu'></i> 
+            <div class="logo"> 
+                <a href="#"> 
+                    <img src="logoA.png" alt="Logo PLN"> 
+                    PLN 
+                </a> 
+            </div> 
+            <div class="nav-links"> 
+                <div class="sidebar-logo"> 
+                    <span class="logo-name">PLN</span> 
+                    <i class='bx bx-x'></i> 
+                </div> 
+                <ul class="links"> 
+                    <li><a href="index.html">HOME</a></li>  
+                    <li><a href="pegawai.php">PEGAWAI</a></li> 
+                    <li><a href="anggaran.php">ANGGARAN</a></li> 
+                    <li><a href="monitoring.php">MONITORING</a></li>  
+                    <li><a href="about.html">ABOUT US</a></li> 
+                    <li><a href="logout.php">LOGOUT</a></li> 
+                </ul> 
+            </div> 
+        </div> 
+    </nav> 
+    <div class="container"> 
+        <div class="header-content"> 
+            <div class="logo"> 
+                <a href="#"><img src="logoB.png" alt="Logo PLN" class="logo-img"></a> 
+            </div> 
+        </div> 
+        <div class="title"> 
+            <h1>E-Budgeting</h1> 
+            <h2>PLN Pusat Penelitian Dan Pengembangan Ketenagalistrikan</h2> 
+        </div> 
+        <div class="content"> 
+            <div class="welcome"> 
+                <h2>Selamat Datang</h2> 
+                <p>di halaman Portal Aplikasi eBudgeting</p> 
+            </div> 
+            <div class="years"> 
+                <h3>Tahun Aplikasi</h3> 
+                <div class="year-buttons"> 
+                    <button>2023</button> 
+                    <button>2024</button> 
+                    <button>2025</button> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</body> 
+</html> 
